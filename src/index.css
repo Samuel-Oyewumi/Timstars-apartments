@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+
+  --color-gold-50: #fdfbf7;
+  --color-gold-100: #fbf5e8;
+  --color-gold-200: #f5ead0;
+  --color-gold-300: #efdcb4;
+  --color-gold-400: #e2be78;
+  --color-gold-500: #d6a445;
+  --color-gold-600: #c18835;
+  --color-gold-700: #a1682e;
+  --color-gold-800: #85532b;
+  --color-gold-900: #6f4426;
+
+  --color-stone-950: #0c0a09;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-gold-50);
+  color: var(--color-stone-950);
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif);
+}
+
+.luxury-gradient {
+  background: linear-gradient(135deg, var(--color-gold-400), var(--color-gold-600));
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+.scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
